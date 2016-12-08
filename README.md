@@ -2,15 +2,9 @@
 
 ##			Film emulation pack for Darktable		
 
+t3mujinpack is a set of presets designed to emulate some of the most used photo films of all time, build specifically for open-source RAW developer software Darktable. It includes some of the most popular film emulations, like the vivid colors of Fuji Velvia, the muted tones of Kodachrome or the classic Ilford b&w films. 
 
-t3mujinpack is a set of presets designed to emulate some of the most used photo films of all time, build specifically for open-source RAW developer software Darktable. Includes vivid colors of Fuji Velvia, the muted tones of Kodachrome or the classic Ilford b&w films. The goal of these is to be as simple as possible by using few Darktable modules, it works solely by manipulating Lab Tone Curves for color manipulation, black & white films rely heavily on Channel Mixer.
-
-
-### Background 
-
-The origin of the presets has been my own workflow, and I’ve using it in my personal and commissioned work for some time, that’s why now I’m also the main tester of it. This is, and will remain, a personal project that’s being shared with a wider audience, so all the feedback is welcome. And because it’s a personal side project is being released for free, but if you decide to pay me a beer I’ll be very, very grateful.
-
-But for the same reasons there are constraints that won’t disappear or features I simply don’t care to implement. Because I own cameras of three different brands I chose not to optimize the presets for each brand or model, it would be very time consuming and I opted to have a broader selection of films; nor did I care to test it with many of the commonly used cameras, but I’ll gladly receive your RAW sample along with your XMP sidecar file. Since I what I was aiming for was the color profiles of each film, other traits related with processing, lenses and others are unlikely to be implemented, this includes: grain, vignetting, light leaks, cross-processing, etc.
+This pack started by [João Almeida](http://www.joaoalmeidaphotography.com) with the motivation of filling the lack of film simulation options, both in quantity and quality, for Darktable. It was motivated by the many options available for the most popular RAW development softwares, but mostly by [G'MIC film emulation](http://gmic.eu/film_emulation/), which has been one of the main references in the devevelpment of these styles. The goal of these is to be as simple as possible by using few Darktable modules, it works solely by manipulating Lab Tone Curves for color manipulation, black & white films rely heavily on Channel Mixer.
 
 
 
@@ -91,11 +85,6 @@ It's highly recommended to have the White Balance properly set before applying i
 ## Changelog
 
 #### 0.1.1	Initial release
-
-
-## Support 
-
-For any help, RAW file samples, questions or suggestions just send an email to info@joaoalmeidaphotography.com.
 
 
 
