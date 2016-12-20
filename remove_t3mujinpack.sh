@@ -12,8 +12,15 @@ database_file=$1
 if [ "$database_file" = "" ]
 then
 	echo ""
-	database_file="~/.config/darktable/library.db"	
-	echo "No database file defined, using default library database"
+	database_file="~/.config/darktable/data.db"	
+	
+	if [ ! -f $database_file ]; then
+	    database_file="~/.config/darktable/library.db"	
+	fi
+	
+	echo ""
+	echo "No database file defined, using default library database: " $database_file
+	echo ""
 	
 fi
 
@@ -35,8 +42,8 @@ fi
 
 echo ""
 echo "Removing currently installed t3mujinpack styles in $database_file"
-$(sqlite3 $database_file "delete from style_items where style_items.styleid in ( select id from styles where name like 't3mujin - %')")
-$(sqlite3 $database_file "delete from styles where name like 't3mujin - %'")
+$(sqlite3 $database_file "delete from style_items where style_items.styleid in ( select id from styles where name like 't3mujin - %' or like 't3mujinpack - %')")
+$(sqlite3 $database_file "delete from styles where name like 't3mujin - %' or like 't3mujinpack - %'")
 
 echo ""
 echo "Done!"
