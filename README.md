@@ -69,7 +69,8 @@ This pack started by [João Almeida](http://www.joaoalmeidaphotography.com) with
 
 ### Tested Cameras
 
-The presets aren't meant to be optimized for specific cameras, but the these are the ones it has tested with:
+These presets aren't camera optimized, but the current version has been tested with the following cameras:
+* Fuji X-T2
 * Fuji X-E2
 * Fuji X-T10 
 * Nikon D300s
@@ -80,10 +81,26 @@ The presets aren't meant to be optimized for specific cameras, but the these are
 
 
 ## Install
-Go to Styles box in Lighttable mode, click Import and select all or only the ones you want to install. It should become available in the styles box or the styles quick access icon in Darkroom mode.
+1. Go to Styles box in Lighttable mode.
+2. Click Import and select all or only the ones you want to install.
 
 ## Uninstall
-Go to Styles box in Lighttable mode, select the style and click Delete. Must be done manually for all.
+1. Close Darktable.
+2. Open a Terminal window.
+3. Go to the folder where the styles were extracted.
+4. Run remove_t3mujinpack.sh.
+  1. This script will try to locate the Darktable database files at its default location. If, for some reason, those are at a different location you can pass that as a script parameter: remove_t3mujinpack.sh /some/folder/data.db
+  2. A list of installed styles will be shown before deletion.
+
+Styles can also be deleted from Darktable's Styles box in Lighttable mode.
+
+## Upgrade
+There is no direct way to upgrade the styles, the solution is to reinstall them.
+
+1. Run the Uninstall steps above, it won't remove the edited images or even delete the keywords associated with the tags.
+2. Install the styles following the steps from above.
+
+
 
 ## Usage 
 Just apply the selected preset, And you're ready to go. 
@@ -92,7 +109,17 @@ It's highly recommended to have the White Balance properly set before applying i
 
 ## Changelog
 
-#### 0.1.1	Initial release
+#### 0.1.1	
+* Initial release
+
+#### 0.2.0
+* Updated Kodak Portra styles (mostly the new ones, the non UC/VC/UC presets).
+* Updated Fuji Pro styles (160Z, 400H, 800H).
+* Updated Fuji Provia styles.
+* Updated Kodak Kodachrome styles.
+* Support for Darktable 2.2.
+* New style removal script, both for uninstall and upgrade.
+* Fix: Velvia 50 wasn’t enabling the module
 
 
 
@@ -101,7 +128,6 @@ It's highly recommended to have the White Balance properly set before applying i
 * Improving the current films
 * Add variatons in some films with more intense or subtle emulation, Portra films are the most like candidate to start on this
 * Add new films, don't have a candidates for now but feel free to add your suggestions  
-* Better way to bulk update/uninstall styles, can be tedious to do one by one
 
 
 
