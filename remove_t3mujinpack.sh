@@ -20,7 +20,7 @@ echo "----------------------------------------------------------------------"
 data_database_file=$1
 library_database_file=$2
 
-# Validate Darktable instalation
+# Validate Darktable installation
 
 if [ ! -x "`which "darktable"`" ]
 then
@@ -89,7 +89,7 @@ styles_list=`sqlite3 $data_database_file "select name from styles where name lik
 if [ "$styles_list" = "" ]
 then
 	echo ""
-	echo "${YELLOW}t3mujinpack is not inslalled${NC}"
+	echo "${YELLOW}t3mujinpack is not installed${NC}"
 	echo ""
 	exit 3
 fi
