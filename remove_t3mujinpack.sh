@@ -3,6 +3,8 @@
 #
 # Author: João Almeida <info@joaoalmeidaphotography.com>
 
+set -eu
+
 # Initialize output colors
 LIGHT_GREY='\033[0;37m'
 YELLOW='\033[1;33m'
@@ -17,8 +19,6 @@ echo ""
 echo "Presets Uninstall script${NC}"
 echo "----------------------------------------------------------------------"
 
-data_database_file=$1
-library_database_file=$2
 
 # Validate Darktable installation
 
@@ -33,19 +33,29 @@ fi
 
 # Setup database file
 
-if [ "$data_database_file" = "" ]
+if [ "${1:-}" = "" ]
 then
 	echo ""
 	echo "Using default database files"
 	data_database_file="$HOME/.config/darktable/data.db"
 	library_database_file="/$HOME/.config/darktable/library.db"
-	if [ ! -f $data_database_file ]
+	if [ ! -f "$data_database_file" ]
 	then
 			echo "db"
 			data_database_file="/$HOME/.config/darktable/library.db"			
 	fi
 else
-	if [ ! -f $data_database_file ]
+	if [ "${2:-} " = "" ]
+	then
+		echo ""
+		echo "${YELLOW}You must also specify the library database file${NC}"
+		echo ""
+		exit
+	else
+		data_database_file="$1"
+		library_database_file="$2"
+	fi
+	if [ ! -f "$data_database_file" ]
 	then
 			echo ""
 			echo "${YELLOW}File $data_database_file does not exist${NC}"
