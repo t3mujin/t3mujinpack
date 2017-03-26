@@ -109,8 +109,12 @@ It's highly recommended to have the White Balance properly set before applying i
 
 ## Changelog
 
-#### 0.1.1	
-* Initial release
+#### 0.3.0
+* Updated Fuji Pro 400H and 800Z.
+* Updated Fuji Provia 100F.
+* Updated Kodak Kodachrome 64 and Kodak Kodachrome 200.
+* Updated Kodak Ektar 100.
+* Fixes in uninstall script: fixed typos and colors, script now more resilient (thanks Marek for the changes).
 
 #### 0.2.0
 * Updated Kodak Portra styles (mostly the new ones, the non UC/VC/UC presets).
@@ -120,6 +124,10 @@ It's highly recommended to have the White Balance properly set before applying i
 * Support for Darktable 2.2.
 * New style removal script, both for uninstall and upgrade.
 * Fix: Velvia 50 wasn’t enabling the module
+
+#### 0.1.1	
+* Initial release
+
 
 
 
