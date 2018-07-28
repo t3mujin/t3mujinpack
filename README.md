@@ -12,7 +12,7 @@
 
 t3mujinpack is a set of presets designed to emulate some of the most used photo films of all time, build specifically for open-source RAW developer software [Darktable](http://www.darktable.org/). It includes some of the most popular film emulations, like the vivid colors of Fuji Velvia, the muted tones of Kodachrome or the classic Ilford b&w films.
 
-This pack started by [João Almeida](http://www.joaoalmeidaphotography.com) with the motivation of filling the lack of film simulation options, both in quantity and quality, for Darktable. It was motivated by the many options available for the most popular RAW development softwares, but mostly by [G'MIC film emulation](http://gmic.eu/film_emulation/), which has been one of the main references in the devevelpment of these styles. The goal of these is to be as simple as possible by using few Darktable modules, it works solely by manipulating Lab Tone Curves for color manipulation, black & white films rely heavily on Channel Mixer.
+This pack started by [João Almeida](http://www.joaoalmeidaphotography.com) while doing regular photo processing and exploring some of Darktable modules, with the motivation of filling the lack of film simulation options, both in quantity and quality, for Darktable. It was motivated by the many options available for the most popular RAW development software applications, but mostly by [G'MIC film emulation](http://gmic.eu/film_emulation/), which has been one of the main references in the development of these styles. The goal of these is to be as simple as possible by using few Darktable modules, it works solely by manipulating Lab Tone Curves for color manipulation, black & white films rely heavily on Channel Mixer.
 
 
 
