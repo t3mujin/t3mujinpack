@@ -69,9 +69,10 @@ This pack started by [João Almeida](http://www.joaoalmeidaphotography.com) with
 
 ### Tested Cameras
 
-These presets aren't camera optimized, but the current version has been tested with the following cameras:
+These presets aren't camera optimized, they rely on having the cameras's basecurve already applied (by default it is). But the current version presets have been tested with the following cameras:
 * Fuji X-T2
 * Fuji X-E2
+* Fuji X-E3
 * Fuji X-T10
 * Nikon D300s
 * Nikon D7100
@@ -95,7 +96,7 @@ These presets aren't camera optimized, but the current version has been tested w
 Styles can also be deleted from Darktable's Styles box in Lighttable mode.
 
 ## Upgrade
-There is no direct way to upgrade the styles, the solution is to reinstall them.
+Sadly there is no direct way to upgrade the styles in Darktable, the only option is to remove all and install the updated styles.
 
 1. Run the Uninstall steps above, it won't remove the edited images or even delete the keywords associated with the tags.
 2. Install the styles following the steps from above.
@@ -103,11 +104,19 @@ There is no direct way to upgrade the styles, the solution is to reinstall them.
 
 
 ## Usage
-Just apply the selected preset, And you're ready to go.
-It's highly recommended to have the White Balance properly set before applying it. These presets where created using Darktable's default base curves for each camera model except for Fuji, where I use my a slightly smother basecurve (very slightly) as I feel the the default one has a bit too much contrast. If you use a custom basecurve to add more contrast or have other modules in the pipeline adding contrast, then expect strange results.
+Just apply the selected preset, and you're ready to go.
+
+These presets where designed to be used with Darktable's [base curve](https://www.darktable.org/usermanual/en/modules.html) enabled, this is to try to have a consistent output with different cameras. You can use default base curve for your camera, that come enabled by default, or you can even fine tune it to have a bit more or less contrast. If you use a custom base curve that's radically different from the default or have other modules in the pipeline adding contrast, then unexpected results could happen. It's highly recommended also to have the White Balance set to a neutral temperature before applying it, and the same goes exposure adjustments, so that the base image is relatively plain and clean.
+
 
 
 ## Changelog
+
+#### 0.4.0
+* Updated all Fuji Pro and Astia 100F films.
+* Updated all Kodak Porta films.
+* Updated all Ektachrome and Ektachrome.
+* Smaller tweaks on Kodak Kodakchrome films.
 
 #### 0.3.0
 * Updated Fuji Pro 400H and 800Z.
