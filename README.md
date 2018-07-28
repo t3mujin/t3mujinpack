@@ -1,22 +1,22 @@
 # t3mujinpack
 
 ##			Film emulation pack for Darktable		
-[![Latest release](https://img.shields.io/github/release/t3mujin/t3mujinpack.svg?style=flat-square)](https://github.com/t3mujin/t3mujinpack/releases) 
-[![t3mujinpack tag on Flickr](https://img.shields.io/badge/t3mujinpack-flickr-ff69b4.svg?style=flat-square)](https://www.flickr.com/photos/tags/t3mujinpack) 
-[![#t3mujin hashtag on Instagram](https://img.shields.io/badge/%23t3mujinpack-instagram-ff69b4.svg?style=flat-square)](https://www.instagram.com/explore/tags/t3mujinpack/) 
+[![Latest release](https://img.shields.io/github/release/t3mujin/t3mujinpack.svg?style=flat-square)](https://github.com/t3mujin/t3mujinpack/releases)
+[![t3mujinpack tag on Flickr](https://img.shields.io/badge/t3mujinpack-flickr-ff69b4.svg?style=flat-square)](https://www.flickr.com/photos/tags/t3mujinpack)
+[![#t3mujin hashtag on Instagram](https://img.shields.io/badge/%23t3mujinpack-instagram-ff69b4.svg?style=flat-square)](https://www.instagram.com/explore/tags/t3mujinpack/)
 [![Donate on Paypal](https://img.shields.io/badge/donate-paypal-yellow.svg?style=flat-square)](https://paypal.me/t3mujin)
 [![Register Newsletter](https://img.shields.io/badge/register-newsletter-lightgrey.svg?style=flat-square)](http://eepurl.com/cdvLev)
 [![Visit main site](https://img.shields.io/badge/visit-main%20site-lightgrey.svg?style=flat-square)](http://t3mujinpack.joaoalmeidaphotography.com/)
 
 
 
-t3mujinpack is a set of presets designed to emulate some of the most used photo films of all time, build specifically for open-source RAW developer software [Darktable](http://www.darktable.org/). It includes some of the most popular film emulations, like the vivid colors of Fuji Velvia, the muted tones of Kodachrome or the classic Ilford b&w films. 
+t3mujinpack is a set of presets designed to emulate some of the most used photo films of all time, build specifically for open-source RAW developer software [Darktable](http://www.darktable.org/). It includes some of the most popular film emulations, like the vivid colors of Fuji Velvia, the muted tones of Kodachrome or the classic Ilford b&w films.
 
 This pack started by [João Almeida](http://www.joaoalmeidaphotography.com) with the motivation of filling the lack of film simulation options, both in quantity and quality, for Darktable. It was motivated by the many options available for the most popular RAW development softwares, but mostly by [G'MIC film emulation](http://gmic.eu/film_emulation/), which has been one of the main references in the devevelpment of these styles. The goal of these is to be as simple as possible by using few Darktable modules, it works solely by manipulating Lab Tone Curves for color manipulation, black & white films rely heavily on Channel Mixer.
 
 
 
-### Available film emulations 
+### Available film emulations
 
 #### Black and White films
 * AGFA APX 100
@@ -72,7 +72,7 @@ This pack started by [João Almeida](http://www.joaoalmeidaphotography.com) with
 These presets aren't camera optimized, but the current version has been tested with the following cameras:
 * Fuji X-T2
 * Fuji X-E2
-* Fuji X-T10 
+* Fuji X-T10
 * Nikon D300s
 * Nikon D7100
 * Nikon D800
@@ -102,9 +102,9 @@ There is no direct way to upgrade the styles, the solution is to reinstall them.
 
 
 
-## Usage 
-Just apply the selected preset, And you're ready to go. 
-It's highly recommended to have the White Balance properly set before applying it. These presets where created using Darktable's default base curves for each camera model except for Fuji, where I use my a slightly smother basecurve (very slightly) as I feel the the default one has a bit too much contrast. If you use a custom basecurve to add more contrast or have other modules in the pipeline adding contrast, then expect strange results. 
+## Usage
+Just apply the selected preset, And you're ready to go.
+It's highly recommended to have the White Balance properly set before applying it. These presets where created using Darktable's default base curves for each camera model except for Fuji, where I use my a slightly smother basecurve (very slightly) as I feel the the default one has a bit too much contrast. If you use a custom basecurve to add more contrast or have other modules in the pipeline adding contrast, then expect strange results.
 
 
 ## Changelog
@@ -125,23 +125,14 @@ It's highly recommended to have the White Balance properly set before applying i
 * New style removal script, both for uninstall and upgrade.
 * Fix: Velvia 50 wasn’t enabling the module
 
-#### 0.1.1	
+#### 0.1.1
 * Initial release
 
 
 
 
-## Future releases roadmap 
+## Future releases roadmap
 
 * Improving the current films
 * Add variatons in some films with more intense or subtle emulation, Portra films are the most like candidate to start on this
 * Add new films, don't have a candidates for now but feel free to add your suggestions  
-
-
-
-
-
-
-
-
-
