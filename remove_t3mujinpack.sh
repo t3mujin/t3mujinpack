@@ -25,8 +25,7 @@ echo "----------------------------------------------------------------------"
 if [ ! -x "`which "darktable"`" ]
 then
 	echo ""
-	echo -e "${YELLOW}Darktable was not found. Is it really installed?${NC}"
-	echo "Execution has ended and presets have NOT been uninstalled!"
+	echo -e "${YELLOW}Darktable is not installed.${NC}"
 	echo ""
 	exit 1
 fi
@@ -41,8 +40,7 @@ then
 	library_database_file="/$HOME/.config/darktable/library.db"
 	if [ ! -f "$data_database_file" ]
 	then
-			echo "db"
-			data_database_file="/$HOME/.config/darktable/library.db"			
+			data_database_file="/$HOME/.config/darktable/library.db"
 	fi
 else
 	if [ "${2:-} " = "" ]
@@ -52,6 +50,7 @@ else
 		echo ""
 		exit
 	else
+		echo "Using given database files"
 		data_database_file="$1"
 		library_database_file="$2"
 	fi
@@ -71,7 +70,7 @@ echo "Current library database file: $library_database_file"
 
 output_data=$(sqlite3 $data_database_file "select count(1) from sqlite_master where name = 'styles' or name = 'style_items' or name = 'tags'")
 
-if [ $output_data != 3 ] 
+if [ $output_data != 3 ]
 then
 	echo ""
 	echo -e "${YELLOW}$data_database_file is not an Darktable metadata database${NC}"
@@ -141,9 +140,8 @@ $(sqlite3 $data_database_file "delete from style_items where style_items.styleid
 $(sqlite3 $data_database_file "delete from style_items where style_items.styleid in ( select id from styles where name like 't3mujinpack - %')")
 $(sqlite3 $data_database_file "delete from styles where name like 't3mujin - %'")
 $(sqlite3 $data_database_file "delete from styles where name like 't3mujinpack - %'")
-echo -n "OK"
 
 echo ""
 echo ""
-echo -ne "${GREEN}Presets have been uninstalled!${NC}"
+echo -ne "${GREEN}t3mujinpack presets have been uninstalled!${NC}"
 echo ""
