@@ -87,9 +87,9 @@ These presets aren't camera optimized, they rely on having the cameras's basecur
 
 ## Uninstall
 1. Close Darktable.
-2. Open a Terminal window.
+2. Open a Terminal/Command window.
 3. Go to the folder where the styles were extracted.
-4. Run remove_t3mujinpack.sh.
+4. Run the uninstall script (remove_t3mujinpack.sh for Linux, remove_t3mujinpack.bat for Windows).
   1. This script will try to locate the Darktable database files at its default location. If, for some reason, those are at a different location you can pass that as a script parameter: remove_t3mujinpack.sh /some/folder/data.db
   2. A list of installed styles will be shown before deletion.
 
@@ -112,10 +112,19 @@ These presets where designed to be used with Darktable's [base curve](https://ww
 
 ## Changelog
 
+#### 0.5.0
+* Updated all Kodak Portra NC/VC/UC.
+* New uninstaller script for Windows.
+* Smaller tweaks on all Fuji Pro.
+* Smaller tweaks on Kodak Ektachrome and Ektar.
+* Smaller tweaks on Kodak Kodakchrome films.
+* Smaller tweaks on Kodak Portra films.
+* Smaller tweaks on Fuji Provia films.
+
 #### 0.4.0
 * Updated all Fuji Pro and Astia 100F films.
 * Updated all Kodak Porta films.
-* Updated all Ektachrome and Ektachrome.
+* Updated all Kodak Ektachrome and Ektar.
 * Smaller tweaks on Kodak Kodakchrome films.
 
 #### 0.3.0
