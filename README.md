@@ -69,7 +69,7 @@ This pack started by [João Almeida](http://www.joaoalmeidaphotography.com) whil
 
 ### Tested Cameras
 
-These presets aren't camera optimized, they rely on having the cameras's basecurve already applied (by default it is). But the current version presets have been tested with the following cameras:
+These presets aren't camera optimized, but have been tested with the following cameras:
 * Fuji X-T2
 * Fuji X-E2
 * Fuji X-E3
@@ -104,9 +104,12 @@ Sadly there is no direct way to upgrade the styles in Darktable, the only option
 
 
 ## Usage
-Just apply the selected preset, and you're ready to go.
+Just apply the selected preset, and you're ready to go. The styles are separated into three groups:
+* Black and White
+* Color Negative
+* Color Slide
 
-These presets where designed to be used with Darktable's [base curve](https://www.darktable.org/usermanual/en/modules.html) enabled, this is to try to have a consistent output with different cameras. You can use default base curve for your camera, that come enabled by default, or you can even fine tune it to have a bit more or less contrast. If you use a custom base curve that's radically different from the default or have other modules in the pipeline adding contrast, then unexpected results could happen. It's highly recommended also to have the White Balance set to a neutral temperature before applying it, and the same goes exposure adjustments, so that the base image is relatively plain and clean.
+By default the basecurve module isn't disabled when styles are applied, but feel free to disable it. It's highly recommended to have the White Balance adjusted to a somehow neutral setting (minor tweaks in temperature and tint are ok) and the same goes with exposure or shadows and highlights before applying the style, this is so that the base image is relatively plain and clean to be a good starting point to apply the style and have the expected result; if you use a enabled more extreme custom base curve that's radically different from the default or have other modules in the pipeline adding contrast, then unexpected results could happen. These styles aren't meant to be a final result and further adjustments after applying the styles are expected and highly recommended.
 
 
 
