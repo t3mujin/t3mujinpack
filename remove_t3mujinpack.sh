@@ -30,6 +30,16 @@ then
 	exit 1
 fi
 
+# Validate SQLite installation
+
+if [ ! -x "`which "sqlite"`" ]
+then
+	echo ""
+	echo -e "${YELLOW}SQLite is not installed.${NC}"
+	echo ""
+	exit 1
+fi
+
 # Setup database file
 
 if [ "${1:-}" = "" ]
