@@ -80,6 +80,47 @@ These presets aren't camera optimized, but have been tested with the following c
 * Sony RX100 I
 
 
+## Download
+The release packages come in three flavors, all have the same funcionality but appear in a different structure in the Lighttable and Darkroom modes. You should download the one that suits you the most, between having all styles at once or a tidier interface.
+
+### Flat hierarchy
+Shows the full, big list without any hierarchy, the way the presets have been show in Darktable until know, ex:
+
+* t3mujinpack - Black and White - Ilford Delta 400
+* t3mujinpack - Color Negative - Fuji Pro 160C
+* t3mujinpack - Color Negative - Fuji Pro 400H
+* t3mujinpack - Color Slide - Kodak Ektachrome 100 GX
+* ...
+
+### One-level hierarchy
+Groups presets into three different sections (Color Slide, Color Negative and Black & White), the presets will appear like this in Darktable styles interface:
+
+* t3mujinpack - Black and White
+  * Ilford Delta 400
+  * ...
+* t3mujinpack - Color Negative
+  * Fuji Pro 160C
+  * Fuji Pro 400H
+  * ...
+* t3mujinpack - Color Slide
+  * Kodak Ektachrome 100 GX
+  * ...
+
+### Two-level hierarchy
+Groups presets into three different sections under a top-level (Color Slide, Color Negative and Black & White), the presets will appear like this in Darktable styles interface:
+
+* t3mujinpack
+  * Black and White
+    * Ilford Delta 400
+    * ...
+  * Color Negative
+    * Fuji Pro 160C
+    * Fuji Pro 400H
+    * ...
+  * Color Slide
+    * Kodak Ektachrome 100 GX
+    * ...
+
 
 ## Install
 1. Go to Styles box in Lighttable mode.
@@ -90,8 +131,8 @@ These presets aren't camera optimized, but have been tested with the following c
 2. Open a Terminal/Command window.
 3. Go to the folder where the styles were extracted.
 4. Run the uninstall script (remove_t3mujinpack.sh for Linux, remove_t3mujinpack.bat for Windows).
-  1. This script will try to locate the Darktable database files at its default location. If, for some reason, those are at a different location you can pass that as a script parameter: remove_t3mujinpack.sh /some/folder/data.db
-  2. A list of installed styles will be shown before deletion.
+   1. This script will try to locate the Darktable database files at its default location. If, for some reason, those are at a different location you can pass that as a script parameter: remove_t3mujinpack.sh /some/folder/data.db
+   2. A list of installed styles will be shown before deletion.
 
 Styles can also be deleted from Darktable's Styles box in Lighttable mode.
 
