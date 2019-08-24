@@ -14,7 +14,7 @@ NC='\033[0m' # No Color
 
 echo ""
 echo "----------------------------------------------------------------------"
-echo -e "${LIGHT_GREY}t3mujinpack - Film emulation presets for Darktable 2.x"
+echo -e "${LIGHT_BLUE}t3mujinpack - Film emulation presets for Darktable"
 echo ""
 echo -e "Presets Uninstall script${NC}"
 echo "----------------------------------------------------------------------"

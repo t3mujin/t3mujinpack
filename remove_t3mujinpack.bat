@@ -15,7 +15,7 @@ set NC=%ESC%[37m
 
 echo.
 echo ----------------------------------------------------------------------
-echo t3mujinpack - Film emulation presets for Darktable 2.x
+echo t3mujinpack - Film emulation presets for Darktable
 echo.
 echo Presets Uninstall script
 echo ----------------------------------------------------------------------
