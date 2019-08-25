@@ -54,12 +54,14 @@ This pack started by [João Almeida](http://www.joaoalmeidaphotography.com) whil
 
 #### Color Slide films
 * Fuji Astia 100F
+* Fuji Fortia SP 50
 * Fuji Provia 100F
 * Fuji Provia 400F
 * Fuji Provia 400X
 * Fuji Sensia 100
 * Fuji Velvia 100
 * Fuji Velvia 50
+* Kodak Ektachrome 100 G
 * Kodak Ektachrome 100 GX
 * Kodak Ektachrome 100 VS
 * Kodak Elite Chrome 400
