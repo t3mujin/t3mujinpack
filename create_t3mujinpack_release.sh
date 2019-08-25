@@ -47,6 +47,8 @@ cp README.md t3mujinpack
 cp LICENSE.txt t3mujinpack
 
 # Create 1 level hierarchy
+echo -e "${LIGHT_BLUE}Creating release with one level${NC}"
+
 cp t3mujinpack*.dtstyle t3mujinpack
 
 sed -i -e "s/\[master\]/$1/g" t3mujinpack/*.dtstyle
@@ -75,7 +77,7 @@ zip -r "./t3mujinpack_$1_flat.zip" t3mujinpack/*
 
 # clear temporary files
 
-#rm -rf t3mujinpack
+rm -rf t3mujinpack
 
 echo ""
 echo ""
