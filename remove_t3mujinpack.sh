@@ -32,7 +32,7 @@ fi
 
 # Validate SQLite installation
 
-if [ ! -x "`which "sqlite"`" ]
+if [ ! -x "`which "sqlite3"`" ]
 then
 	echo ""
 	echo -e "${YELLOW}SQLite is not installed.${NC}"
