@@ -33,6 +33,9 @@ This pack started by [João Almeida](http://www.joaoalmeidaphotography.com) whil
 * Kodak Tri-X 400
 
 #### Color Negative films
+* Agfa Vista 100
+* Agfa Vista 200
+* Agfa Vista 400
 * Fuji Pro 160C
 * Fuji Pro 400H
 * Fuji Pro 800Z
@@ -42,6 +45,8 @@ This pack started by [João Almeida](http://www.joaoalmeidaphotography.com) whil
 * Fuji Superia 400
 * Fuji Superia 800
 * Fuji Superia HG 1600
+* Kodak ColorPlus 200
+* Kodak Gold 200
 * Kodak Ektar 100
 * Kodak Portra 160
 * Kodak Portra 160 NC
@@ -51,6 +56,7 @@ This pack started by [João Almeida](http://www.joaoalmeidaphotography.com) whil
 * Kodak Portra 400 UC
 * Kodak Portra 400 VC
 * Kodak Portra 800
+* Kodak Ultra Max 400
 
 #### Color Slide films
 * Fuji Astia 100F
@@ -72,6 +78,7 @@ This pack started by [João Almeida](http://www.joaoalmeidaphotography.com) whil
 ### Tested Cameras
 
 These presets aren't camera optimized, but have been tested with the following cameras:
+* Fuji X-T3
 * Fuji X-T2
 * Fuji X-E2
 * Fuji X-E3
