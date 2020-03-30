@@ -77,7 +77,7 @@ This pack started by [João Almeida](http://www.joaoalmeidaphotography.com) whil
 
 ### Tested Cameras
 
-These presets aren't camera optimized, but have been tested with the following cameras:
+These presets aren't optimized to any model and should work with any camera, it assumes some basic adjustments (exposure, white balance, etc.) have already been applied, but has been known to be used with the following cameras:
 * Fuji X-T3
 * Fuji X-T2
 * Fuji X-E2
@@ -88,6 +88,7 @@ These presets aren't camera optimized, but have been tested with the following c
 * Nikon D800
 * Sony RX100 I
 
+You have any issue with your camera model, or just want to add yours to that list? Just (open an issue)[https://github.com/t3mujin/t3mujinpack/issues/new?labels=camera-feedback&title=Camera%20feedback%20-%20YOUR_CAMERA_NAME_HERE] and send your feedback.
 
 ## Download
 The release packages come in three flavors, all have the same funcionality but appear in a different structure in the Lighttable and Darkroom modes. You should download the one that suits you the most, between having all styles at once or a tidier interface.
@@ -206,4 +207,4 @@ By default the basecurve module isn't disabled when styles are applied, but feel
 
 * Improving the current films
 * Add variatons in some films with more intense or subtle emulation, Portra films are the most like candidate to start on this
-* Add new films, don't have a candidates for now but feel free to add your suggestions  
+* Add new films, don't have a candidates for now but (feel free to add your suggestions)[https://github.com/t3mujin/t3mujinpack/issues/new?labels=enhancement&title=New%20preset%20-%20YOUR_PRESET_NAME_HERE]  
