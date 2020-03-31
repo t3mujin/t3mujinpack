@@ -155,12 +155,17 @@ Sadly there is no direct way to upgrade the styles in Darktable, the only option
 
 
 ## Usage
-Just apply the selected preset, and you're ready to go. The styles are separated into three groups:
+Just apply the selected preset, and you're ready to go. The styles are separated into three groups, based on the nature of the original film:
 * Black and White
 * Color Negative
 * Color Slide
 
-By default the basecurve module isn't disabled when styles are applied, but feel free to disable it. It's highly recommended to have the White Balance adjusted to a somehow neutral setting (minor tweaks in temperature and tint are ok) and the same goes with exposure or shadows and highlights before applying the style, this is so that the base image is relatively plain and clean to be a good starting point to apply the style and have the expected result; if you use a enabled more extreme custom base curve that's radically different from the default or have other modules in the pipeline adding contrast, then unexpected results could happen. These styles aren't meant to be a final result and further adjustments after applying the styles are expected and highly recommended.
+The presets aren't meant to be a single step solution, specially for RAW images, but a step in a workflow that slightly changes the color and exposure look and feel. The simplified version of that workflow would be something like this:
+1. Basic processing (exposure, white balance, etc.)
+2. Apply the preset
+3. Further processing, including further adjustments
+
+It's highly recommended having White Balance adjusted to a somehow neutral setting, minor tweaks in temperature and tint are ok. the same goes with exposure or shadows and highlights before applying the style, this is so that the base image is relatively plain and clean to be a good starting point to apply the style and have the expected result; if you use a enabled more extreme custom base curve that's radically different from the default or have other modules in the pipeline adding contrast, then unexpected results could happen. These styles aren't meant to be a final result and further adjustments after applying the styles are expected and highly recommended.
 
 
 
