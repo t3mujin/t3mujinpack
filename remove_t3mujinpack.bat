@@ -71,18 +71,18 @@ for /f %%i in ('bin\sqlite3.exe %data_database_file% "select count(1) from sqlit
 
 if not %output_data% == 3 (
 	echo.
-	echo %data_database_file% is not an Darktable metadata database
+	echo %data_database_file% is not an Darktable 3.0.x metadata database
 	echo Execution has ended and presets have NOT been uninstalled!
 	echo.
 	exit /B
 )
 
 set output_library=
-for /f %%i in ('bin\sqlite3.exe  %library_database_file% "select count(1) from sqlite_master where name = 'tagged_images' or name = 'used_tags'"') do set output_library=%%i
+for /f %%i in ('bin\sqlite3.exe  %library_database_file% "select count(1) from sqlite_master where name = 'tagged_images'"') do set output_library=%%i
 
-if not %output_library% == 2 (
+if not %output_library% == 1 (
 	echo.
-	echo %library_database_file% is not an Darktable metadata database
+	echo %library_database_file% is not an Darktable 3.0.x metadata database
 	echo Execution has ended and presets have NOT been uninstalled!
 	echo.
 	exit /B
@@ -94,7 +94,6 @@ rem Validate t3mujinpack instalation (including older version)
 set styles_list=
 
 for /f %%i in ('bin\sqlite3.exe  %data_database_file% "select name from styles where name like 't3mujin - %%' or name like 't3mujinpack - %%' order by name"') do set styles_list=%%i
-
 
 if "%styles_list%" == "" (
 	echo.
@@ -117,10 +116,10 @@ rem Execute uninstall
 echo.
 echo Removing styles definitions...
 
-for /f %%i in ('bin\sqlite3.exe  %data_database_file% "delete from style_items where style_items.styleid in ( select id from styles where name like 't3mujin - %%')"') do set styles_list=%%i
-for /f %%i in ('bin\sqlite3.exe  %data_database_file% "delete from style_items where style_items.styleid in ( select id from styles where name like 't3mujinpack - %%')"') do set styles_list=%%i
-for /f %%i in ('bin\sqlite3.exe  %data_database_file% "delete from styles where name like 't3mujin - %%'"') do set styles_list=%%i
-for /f %%i in ('bin\sqlite3.exe  %data_database_file% "delete from styles where name like 't3mujinpack - %%'"') do set styles_list=%%i
+for /f %%i in ('bin\sqlite3.exe  %data_database_file% "delete from style_items where style_items.styleid in ( select id from styles where name like '%%t3mujin - %%')"') do set styles_list=%%i
+for /f %%i in ('bin\sqlite3.exe  %data_database_file% "delete from style_items where style_items.styleid in ( select id from styles where name like '%%t3mujinpack - %%')"') do set styles_list=%%i
+for /f %%i in ('bin\sqlite3.exe  %data_database_file% "delete from styles where name like '%%t3mujin - %%'"') do set styles_list=%%i
+for /f %%i in ('bin\sqlite3.exe  %data_database_file% "delete from styles where name like '%%t3mujinpack - %%'"') do set styles_list=%%i
 
 echo.
 echo.
