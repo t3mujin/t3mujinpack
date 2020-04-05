@@ -83,18 +83,18 @@ output_data=$(sqlite3 $data_database_file "select count(1) from sqlite_master wh
 if [ $output_data != 3 ]
 then
 	echo ""
-	echo -e "${YELLOW}$data_database_file is not an Darktable metadata database${NC}"
+	echo -e "${YELLOW}$data_database_file is not an Darktable 3.0.x metadata database${NC}"
 	echo "Execution has ended and presets have NOT been uninstalled!"
 	echo ""
 	exit 2
 fi
 
-output_library=$(sqlite3 $library_database_file "select count(1) from sqlite_master where name = 'tagged_images' or name = 'used_tags'")
+output_library=$(sqlite3 $library_database_file "select count(1) from sqlite_master where name = 'tagged_images'")
 
-if [ $output_library != 2 ]
+if [ $output_library != 1 ]
 then
 	echo ""
-	echo -e "${YELLOW}$library_database_file is not an Darktable library database${NC}"
+	echo -e "${YELLOW}$library_database_file is not an Darktable 3.0.x library database${NC}"
 	echo "Execution has ended and presets have NOT been uninstalled!"
 	echo ""
 	exit 2
