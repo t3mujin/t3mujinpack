@@ -116,21 +116,6 @@ Groups presets into three different sections (Color Slide, Color Negative and Bl
   * Kodak Ektachrome 100 GX
   * ...
 
-### Two-level hierarchy
-Groups presets into three different sections under a top-level (Color Slide, Color Negative and Black & White), the presets will appear like this in Darktable styles interface:
-
-* t3mujinpack
-  * Black and White
-    * Ilford Delta 400
-    * ...
-  * Color Negative
-    * Fuji Pro 160C
-    * Fuji Pro 400H
-    * ...
-  * Color Slide
-    * Kodak Ektachrome 100 GX
-    * ...
-
 
 ## Install
 1. Go to Styles box in Lighttable mode.
@@ -170,6 +155,20 @@ It's highly recommended having White Balance adjusted to a somehow neutral setti
 
 
 ## Changelog
+
+
+#### 0.6.0
+* New style: Fuji Fortia SP 50.
+* New style: Kodak Ektachrome 100 G.
+* New style: Agfa Vista 100.
+* New style: Agfa Vista 200.
+* New style: Agfa Vista 400.
+* New style: Kodak ColorPlus 200.
+* New style: Kodak Gold 200.
+* New style: Kodak Ultra Max 400.
+* Scripts supporting for Darktable 3.0.x database.
+* Option for hierarchical view.
+* Tweaks in most of existing styles.
 
 #### 0.5.0
 * Updated all Kodak Portra NC/VC/UC.
