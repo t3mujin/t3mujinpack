@@ -20,24 +20,53 @@ echo -e "Presets Uninstall script${NC}"
 echo "----------------------------------------------------------------------"
 
 
-# Validate Darktable installation
+# Linux validate Darktable installation and SQLite installation
 
-if [ ! -x "`which "darktable"`" ]
-then
-	echo ""
-	echo -e "${YELLOW}Darktable is not installed.${NC}"
-	echo ""
-	exit 1
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+	# Validate Darktable installation
+
+	if [ ! -x "`which "darktable"`" ]
+	then
+		echo ""
+		echo -e "${YELLOW}Darktable is not installed.${NC}"
+		echo ""
+		exit 1
+	fi
+
+	# Validate SQLite installation
+
+	if [ ! -x "`which "sqlite3"`" ]
+	then
+		echo ""
+		echo -e "${YELLOW}SQLite is not installed.${NC}"
+		echo ""
+		exit 1
+	fi
 fi
 
-# Validate SQLite installation
 
-if [ ! -x "`which "sqlite3"`" ]
-then
-	echo ""
-	echo -e "${YELLOW}SQLite is not installed.${NC}"
-	echo ""
-	exit 1
+# macOS validate Darktable installation and SQLite installation
+
+if [[ "$OSTYPE" == "darwin"* ]]; then
+	# Validate Darktable installation
+
+	if [ ! -x "`mdfind kMDItemFSName = "darktable.app"`" ]
+	then
+		echo ""
+		echo -e "${YELLOW}Darktable is not installed.${NC}"
+		echo ""
+		exit 1
+	fi
+
+	# Validate SQLite installation
+
+	if [ ! -x "`which "sqlite3"`" ]
+	then
+		echo ""
+		echo -e "${YELLOW}SQLite is not installed.${NC}"
+		echo ""
+		exit 1
+	fi
 fi
 
 # Setup database file
