@@ -30,7 +30,7 @@ jobs:
         run: ./create_t3mujinpack_release.sh "nightly"
 
       - name: Update nightly release
-        uses: eine/tip@master
+        uses: pyTooling/Actions/releaser@main
         with:
             tag: nightly
             rm: true
