@@ -35,4 +35,4 @@ jobs:
             tag: nightly
             rm: true
             token: ${{ secrets.GITHUB_TOKEN }}
-            files: build/libs/*.*
+            files: "*.zip"
