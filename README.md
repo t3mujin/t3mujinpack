@@ -78,10 +78,12 @@ This pack started by [João Almeida](http://www.joaoalmeidaphotography.com) whil
 ### Tested Cameras
 
 These presets aren't optimized to any model and should work with any camera, it assumes some basic adjustments (exposure, white balance, etc.) have already been applied, but has been known to be used with the following cameras:
+* Fuji X-T5
+* Fuji X100V 
 * Fuji X-T3
 * Fuji X-T2
-* Fuji X-E2
 * Fuji X-E3
+* Fuji X-E2
 * Fuji X-T10
 * Nikon D300s
 * Nikon D7100
