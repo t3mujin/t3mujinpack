@@ -93,7 +93,7 @@ These presets aren't optimized to any model and should work with any camera, it 
 You have any issue with your camera model, or just want to add yours to that list? Just [open an issue](https://github.com/t3mujin/t3mujinpack/issues/new?labels=camera-feedback&title=Camera%20feedback%20-%20YOUR_CAMERA_NAME_HERE) and send your feedback.
 
 ## Download
-The release packages come in three flavors, all have the same funcionality but appear in a different structure in the Lighttable and Darkroom modes. You should download the one that suits you the most, between having all styles at once or a tidier interface.
+The release packages come in three flavors, all have the same functionality but appear in a different structure in the Lighttable and Darkroom modes. You should download the one that suits you the most, between having all styles at once or a tidier interface.
 
 ### Flat hierarchy
 Shows the full, big list without any hierarchy, the way the presets have been show in Darktable until know, ex:
